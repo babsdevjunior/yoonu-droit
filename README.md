@@ -58,7 +58,7 @@ Pour cloner et tester le projet en local sur votre machine :
    ```
 
 2. **Lancer le site :**
-   Ouvrez simplement le fichier `index.html` situé à la racine dans votre navigateur web, ou utilisez une extension de type *Live Server* (sur VS Code) pour une expérience de navigation fluide.
+   Ouvrez simplement le fichier `index.html` situé à la racine dans votre navigateur web, ou utilisez une extension de type *Live Server* pour une expérience de navigation fluide.
 
 ---
 
