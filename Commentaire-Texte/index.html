@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maîtriser la Méthodologie du Commentaire de Texte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        body, a, button {
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f59e0b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z'/%3E%3Cpath d='m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z'/%3E%3Cpath d='M7 21h10'/%3E%3Cpath d='M12 3v18'/%3E%3Cpath d='M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2'/%3E%3C/svg%3E") 12 12, auto;
+        }
+        a:hover, button:hover {
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23f59e0b' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z'/%3E%3Cpath d='m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z'/%3E%3Cpath d='M7 21h10'/%3E%3Cpath d='M12 3v18'/%3E%3Cpath d='M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2'/%3E%3C/svg%3E") 12 12, pointer;
+        }
+        .step-card {
+            transition: all 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-200 selection:text-slate-900 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md text-white border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="../index.html" class="flex items-center gap-2">
+                    <span class="text-amber-400 text-2xl">⚖️</span>
+                    <span class="font-serif font-bold text-lg tracking-wide">Yoonu<span class="text-amber-400">Droit</span></span>
+                </a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                    <a href="../Commentaire-Texte/index.html" class="hover:text-amber-400 transition">Accueil</a>
+                    <a href="#adnapija" class="hover:text-amber-400 transition">Introduction (AD.NA.PI.JA)</a>
+                    <a href="#partie1" class="hover:text-amber-400 transition">I. Tout ce qu'il a dit</a>
+                    <a href="#partie2" class="hover:text-amber-400 transition">II. Tout ce que j'en pense</a>
+                    <a href="#exemple" class="hover:text-amber-400 transition">Exemple Intégral</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-slate-900 text-white py-16 md:py-24 border-b-4 border-amber-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold tracking-wider uppercase mb-4 border border-amber-500/30">
+                Chapitre IV • Analyse Textuelle & Doctrinale
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-bold leading-tight mb-6">
+                Maîtriser la Méthodologie du <span class="text-amber-400 italic">Commentaire de Texte</span>
+            </h1>
+            <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
+                De la méthode AD.NA.PI.JA à l'analyse linéaire : apprenez à expliquer la pensée d'un auteur ou du législateur avant de la discuter avec rigueur.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#adnapija" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold rounded-lg shadow-lg transition">
+                    La méthode AD.NA.PI.JA
+                </a>
+                <a href="#exemple" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg border border-slate-700 transition">
+                    Voir un exemple d'introduction
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-16 flex-grow">
+
+        <!-- Section 1: Introduction (AD.NA.PI.JA) -->
+        <section id="adnapija" class="bg-white rounded-2xl p-6 sm:p-10 shadow-sm border border-slate-200">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-amber-400 font-bold text-sm">01</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">L'introduction : L'acronyme AD.NA.PI.JA</h2>
+            </div>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                Contrairement à la dissertation (exercice de démonstration), le commentaire de texte est un exercice pédagogique d'<strong>explication des idées d'autrui</strong>. Son introduction obéit à un canevas précis en 6 points :
+            </p>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                <div class="step-card p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <span class="text-amber-600 font-bold text-sm">1. AD — Auteur & Date</span>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        Présenter l'autorité ou l'auteur du texte avec élégance (évitez le banal <em>« l'auteur est le législateur »</em>) et situer sa date d'adoption ou de publication.
+                    </p>
+                </div>
+                <div class="step-card p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <span class="text-amber-600 font-bold text-sm">2. NA — Nature du texte</span>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        Préciser sa valeur juridique : disposition constitutionnelle, législative (loi, code), réglementaire (décret) ou extrait d'ouvrage doctrinal.
+                    </p>
+                </div>
+                <div class="step-card p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <span class="text-amber-600 font-bold text-sm">3. P — Plan / Structure</span>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        Décrire l'organisation matérielle et logique du document soumis à l'étude (ex. : découpage en alinéas, phrases ou paragraphes).
+                    </p>
+                </div>
+                <div class="step-card p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <span class="text-amber-600 font-bold text-sm">4. I — Idée générale</span>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        Dégager en une formulation claire la substance et l'objectif central poursuivi par le texte.
+                    </p>
+                </div>
+                <div class="step-card p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <span class="text-amber-600 font-bold text-sm">5. J — Justification du plan</span>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        Expliquer la logique qui sous-tend le découpage retenu pour analyser l'équilibre du texte.
+                    </p>
+                </div>
+                <div class="step-card p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <span class="text-amber-600 font-bold text-sm">6. A — Annonce du plan</span>
+                    <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                        Annoncer fluidement les deux grandes parties <strong>(I)</strong> et <strong>(II)</strong> du développement.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Les deux mouvements du corps du devoir -->
+        <section class="grid md:grid-cols-2 gap-6">
+            <!-- Mouvement I -->
+            <div id="partie1" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-slate-900 text-amber-400 text-xs font-bold uppercase mb-3">Mouvement 01</span>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-3">I. « Tout ce qu'il a dit »</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Avant de critiquer, il faut restituer fidèlement la pensée de l'auteur. Cette exigence s'applique sur deux plans :
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="p-3 rounded-lg bg-slate-50 border border-slate-200">
+                            <strong class="text-slate-900 block mb-1">Dans la forme : Linéaire vs Synthétique</strong>
+                            Privilégiez le <strong>commentaire linéaire</strong> (suivre le texte ligne par ligne, alinéa par alinéa) : il élimine tout risque de hors-sujet en collant au texte « homme à homme ».
+                        </li>
+                        <li class="p-3 rounded-lg bg-slate-50 border border-slate-200">
+                            <strong class="text-slate-900 block mb-1">Dans le fond : Le « vol plané »</strong>
+                            Commencez toujours chaque développement en <strong>citant le texte</strong> (<em>« Aux termes de l'article... »</em>), puis définissez et explicitez chaque mot clé grâce à votre cours.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mouvement II -->
+            <div id="partie2" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-amber-500 text-slate-900 text-xs font-bold uppercase mb-3">Mouvement 02</span>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-3">II. « Tout ce que j'en pense »</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        C'est la phase du commentaire proprement dit : discuter, examiner et apprécier la portée de la règle ou de la thèse exposée.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="p-3 rounded-lg bg-slate-50 border border-slate-200">
+                            <strong class="text-slate-900 block mb-1">Les leviers de discussion</strong>
+                            Relever une contradiction logique, signaler une lacune, confronter la norme (la <em>doxa</em>) à l'évolution actuelle de la société ou opposer d'autres courants doctrinaux.
+                        </li>
+                        <li class="p-3 rounded-lg bg-slate-50 border border-slate-200">
+                            <strong class="text-slate-900 block mb-1">La discipline du commentaire</strong>
+                            <strong>Retourner au texte en permanence</strong> (<em>« l'auteur affirme... »</em>) et soigner les <strong>transitions</strong> entre chaque sous-partie pour ne pas glisser vers une dissertation.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Exemple Interactif (Article 1er Code de la famille sénégalais) -->
+        <section id="exemple" class="bg-slate-900 text-white rounded-2xl p-6 sm:p-10 shadow-xl">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-6">
+                <div>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Illustration Tirée du Cours</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold mt-1">Article 1<sup>er</sup> du Code de la famille sénégalais</h2>
+                    <p class="text-slate-400 text-sm mt-1">Application intégrale de la méthode d'introduction AD.NA.PI.JA</p>
+                </div>
+                <button id="toggle-steps" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-sm font-semibold rounded-lg transition self-start sm:self-center">
+                    Afficher les repères AD.NA.PI.JA
+                </button>
+            </div>
+
+            <div class="space-y-4 text-slate-200 leading-relaxed text-base font-light">
+                <p>
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mr-1">AD (Auteur & Date)</span>Cette disposition soumise à notre étude est un article extrait du Code de la famille du Sénégal. Avant l'accession du Sénégal à la souveraineté internationale en 1960, le Code civil français de 1804 y était applicable. Juste après les indépendances, le législateur sénégalais a entrepris l'élaboration d'un code national des personnes et de la famille qui a abouti à la loi n° 72-61 du 12 juin 1972, entrée en vigueur le 1<sup>er</sup> janvier 1973. 
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">NA (Nature)</span>Par ailleurs, l'article 67 de la Constitution sénégalaise du 22 janvier 2001 réserve entièrement le droit des personnes et de la famille au domaine de la loi ; par conséquent, les dispositions soumises à notre commentaire revêtent une nature purement législative. 
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">P (Plan du texte)</span>Issu du Livre premier consacré aux personnes, l'article 1<sup>er</sup> se scinde en trois alinéas : le premier fixe le commencement et la cessation de la personnalité juridique, le deuxième envisage la possibilité pour l'enfant d'acquérir des droits dès sa conception, et le troisième détermine la date légale de cette conception. 
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">I (Idée générale)</span><strong class="text-white font-semibold">La combinaison de ces alinéas permet d'affirmer que l'idée générale de ce texte réside dans la durée et la protection de la personnalité juridique.</strong> 
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">J & A (Justification & Annonce)</span>Le législateur réalise ainsi un équilibre entre la personnalité juridique des personnes physiques nées et celle des personnes simplement conçues. C'est pourquoi le commentaire de cette disposition nous conduira d'abord à analyser l'existence et les contours de la personnalité juridique <strong class="text-amber-400">(I)</strong>, avant d'étudier la possibilité pour l'enfant d'acquérir des droits dès sa conception <strong class="text-amber-400">(II)</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 4: Règles d'Or -->
+        <section id="regles" class="bg-white rounded-2xl p-6 sm:p-10 shadow-sm border border-slate-200">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Les règles d'or du commentaire de texte</h2>
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+                    <h3 class="font-bold text-emerald-900 flex items-center gap-2 mb-2">
+                        <span>✅</span> Les bonnes pratiques
+                    </h3>
+                    <ul class="text-sm text-emerald-800 space-y-2">
+                        <li>• Suivre rigoureusement le schéma <strong>AD.NA.PI.JA</strong> dès l'introduction.</li>
+                        <li>• Toujours citer un extrait du texte au début de chaque sous-partie.</li>
+                        <li>• Définir juridiquement chaque mot important utilisé par l'auteur.</li>
+                        <li>• Faire preuve d'esprit critique tout en restant humble et nuancé.</li>
+                    </ul>
+                </div>
+                <div class="p-4 rounded-xl bg-rose-50 border border-rose-200">
+                    <h3 class="font-bold text-rose-900 flex items-center gap-2 mb-2">
+                        <span>❌</span> Les pièges à bannir
+                    </h3>
+                    <ul class="text-sm text-rose-800 space-y-2">
+                        <li>• Paraphraser le texte en le répétant sans apporter d'explication théorique.</li>
+                        <li>• Laisser le texte de côté pour faire une dissertation hors-sujet.</li>
+                        <li>• Employer des formules maladroites (<em>« texte de nature didactique »</em>).</li>
+                        <li>• Oublier les transitions entre les différentes parties du plan.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800 mt-12">
+        <p>Babacar Seck — Méthodologie Juridique (Le Commentaire de Texte)</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('toggle-steps');
+        const badges = document.querySelectorAll('.step-badge');
+        let visible = false;
+
+        btn.addEventListener('click', () => {
+            visible = !visible;
+            badges.forEach(badge => {
+                badge.classList.toggle('hidden', !visible);
+            });
+            btn.textContent = visible ? 'Masquer les repères AD.NA.PI.JA' : 'Afficher les repères AD.NA.PI.JA';
+        });
+    </script>
+</body>
+</html>

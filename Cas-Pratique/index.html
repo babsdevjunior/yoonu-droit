@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maîtriser la Méthodologie du Cas Pratique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        body, a, button {
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f59e0b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z'/%3E%3Cpath d='m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z'/%3E%3Cpath d='M7 21h10'/%3E%3Cpath d='M12 3v18'/%3E%3Cpath d='M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2'/%3E%3C/svg%3E") 12 12, auto;
+        }
+        a:hover, button:hover {
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23f59e0b' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z'/%3E%3Cpath d='m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z'/%3E%3Cpath d='M7 21h10'/%3E%3Cpath d='M12 3v18'/%3E%3Cpath d='M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2'/%3E%3C/svg%3E") 12 12, pointer;
+        }
+        .step-card {
+            transition: all 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-200 selection:text-slate-900 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md text-white border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="../index.html" class="flex items-center gap-2">
+                    <span class="text-amber-400 text-2xl">⚖️</span>
+                    <span class="font-serif font-bold text-lg tracking-wide">Yoonu<span class="text-amber-400">Droit</span></span>
+                </a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                    <a href="../Cas-Pratique/index.html" class="hover:text-amber-400 transition">Accueil</a>
+                    <a href="#preliminaires" class="hover:text-amber-400 transition">Étapes Préliminaires</a>
+                    <a href="#syllogisme" class="hover:text-amber-400 transition">Résolution & Syllogisme</a>
+                    <a href="#exemple" class="hover:text-amber-400 transition">Exemple Corrigé</a>
+                    <a href="#regles" class="hover:text-amber-400 transition">Règles d'Or</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-slate-900 text-white py-16 md:py-24 border-b-4 border-amber-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold tracking-wider uppercase mb-4 border border-amber-500/30">
+                Chapitre II • Consultation Juridique
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-bold leading-tight mb-6">
+                Maîtriser la Méthodologie du <span class="text-amber-400 italic">Cas Pratique</span>
+            </h1>
+            <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
+                Glissez-vous dans la peau d'un avocat ou d'un juge : apprenez à qualifier les faits et à appliquer le syllogisme juridique avec une rigueur implacable.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#syllogisme" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold rounded-lg shadow-lg transition">
+                    La méthode du syllogisme
+                </a>
+                <a href="#exemple" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg border border-slate-700 transition">
+                    Voir un cas résolu
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-16 flex-grow">
+
+        <!-- Section 1: Étapes Préliminaires -->
+        <section id="preliminaires" class="bg-white rounded-2xl p-6 sm:p-10 shadow-sm border border-slate-200">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-amber-400 font-bold text-sm">01</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Les étapes préliminaires : Lecture & tri des faits</h2>
+            </div>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                Dans un cas pratique, le correcteur ne juge pas seulement la solution finale, mais la <strong>valeur de votre raisonnement</strong>. Avant de rédiger, deux opérations préparatoires sont indispensables :
+            </p>
+            
+            <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <span class="text-amber-500">1.</span> La lecture intégrale et schématisée
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Lisez l'énoncé en entier (y compris toutes les questions) pour mesurer l'imbrication des situations. N'hésitez pas à dessiner un schéma au brouillon (dates, liens entre les personnes) pour démêler l'histoire.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <span class="text-amber-500">2.</span> Le résumé pertinent et dépersonnalisé
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Ne recopiez pas l'énoncé ! Écartez les détails anecdotiques, n'inventez jamais de faits et remplacez les prénoms par des <strong>catégories juridiques</strong> (<em>le vendeur, l'acheteur, le mineur, le créancier</em>).
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                <p class="text-sm text-amber-900 font-medium">
+                    🕵️ <strong>Cas ouvert vs Cas « mystique » :</strong> Si l'énoncé pose des questions précises, répondez-y dans l'ordre. S'il se termine par une formule ouverte (<em>« Qu'en pensez-vous ? »</em> ou <em>« Conseillez-le »</em>), vous devez détecter vous-même tous les problèmes juridiques cachés.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: La Résolution (Du fait au droit et retour) -->
+        <section id="syllogisme" class="space-y-6">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="text-amber-600 font-semibold text-sm uppercase tracking-wider">La Mécanique du Raisonnement</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-1">Du fait au droit, et du droit au fait</h2>
+                <p class="text-slate-600 mt-2">La résolution proprement dite s'articule en deux grandes sections structurées par le syllogisme juridique.</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Section 1 du cours -->
+                <div class="step-card bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 text-xs font-bold uppercase">Section 1</span>
+                        <h3 class="text-xl font-bold text-slate-900">Du fait au droit : Qualification, Problème & Règle</h3>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-4 mt-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="text-amber-600 font-bold text-sm">1. Qualification juridique</span>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Traduire les faits bruts en langage juridique abstrait. <em>Ex. : « acheter un scooter à 17 ans » devient « un acte juridique accompli par un mineur non émancipé ».</em>
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="text-amber-600 font-bold text-sm">2. Problème de droit</span>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Formuler la question juridique abstraite que soulève la situation qualifiée (si elle n'est pas déjà posée).
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="text-amber-600 font-bold text-sm">3. Règle de droit (Majeure)</span>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Exposer avec précision les textes de loi, les arrêts de principe de la jurisprudence et la doctrine applicables.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 du cours -->
+                <div class="step-card bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 rounded-full bg-amber-500 text-slate-900 text-xs font-bold uppercase">Section 2</span>
+                        <h3 class="text-xl font-bold text-slate-900">Du droit au fait : Application & Solution concrète</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 mt-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="text-amber-600 font-bold text-sm">4. La confrontation (Mineure)</span>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Vérifier point par point si les conditions exigées par la règle de droit sont réunies dans les faits de l'espèce (<em>« En l'espèce... »</em>). Explorer toutes les hypothèses probables s'il existe un doute.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="text-amber-600 font-bold text-sm">5. La solution (Conclusion)</span>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Trancher clairement : votre client peut-il obtenir gain de cause ? Quel est le fondement juridique le plus solide ? (<em>« Par conséquent... »</em>).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Exemple Interactif -->
+        <section id="exemple" class="bg-slate-900 text-white rounded-2xl p-6 sm:p-10 shadow-xl">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-6">
+                <div>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Application Pratique</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold mt-1">Exemple complet de résolution</h2>
+                </div>
+                <button id="toggle-steps" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-sm font-semibold rounded-lg transition self-start sm:self-center">
+                    Afficher les étapes du syllogisme
+                </button>
+            </div>
+
+            <!-- Énoncé -->
+            <div class="bg-slate-800/80 border border-slate-700 p-4 rounded-xl mb-6 text-sm text-slate-300">
+                <strong class="text-amber-400 uppercase tracking-wider text-xs block mb-1">Énoncé du cas d'espèce :</strong>
+                « Aminata, âgée de 17 ans, a acheté un scooter d'occasion à crédit sans l'autorisation de ses parents. Aujourd'hui, ses parents souhaitent annuler cet achat, mais le vendeur refuse au motif que le contrat a été signé. Conseillez les parents d'Aminata. »
+            </div>
+
+            <!-- Résolution rédigée -->
+            <div class="space-y-4 text-slate-200 leading-relaxed text-base font-light">
+                <p>
+                    <span class="step-badge hidden inline-block px-2 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mr-1">1. Qualification des faits</span>Un mineur non émancipé a conclu un acte juridique à titre onéreux (un contrat de vente à crédit) sans l'autorisation préalable de ses représentants légaux, lesquels entendent désormais en obtenir l'anéantissement rétroactif.
+                </p>
+                <p>
+                    <span class="step-badge hidden inline-block px-2 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mr-1">2. Problème de droit</span><strong class="text-white font-semibold">Un contrat de vente à crédit conclu seul par un mineur non émancipé est-il valable ou encourt-il la nullité à la demande de ses représentants légaux ?</strong>
+                </p>
+                <p>
+                    <span class="step-badge hidden inline-block px-2 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mr-1">3. Règle de droit (Majeure)</span>En droit civil, le mineur non émancipé est frappé d'une incapacité générale d'exercice destinée à le protéger contre son inexpérience. S'il peut accomplir seul les actes de la vie courante autorisés par la loi ou l'usage, les actes de disposition ou les engagements financiers importants nécessitent l'accord de ses représentants légaux, à défaut de quoi l'acte encourt la nullité relative.
+                </p>
+                <p>
+                    <span class="step-badge hidden inline-block px-2 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mr-1">4. Application (Mineure)</span><em>En l'espèce</em>, l'acquéreur était âgé de 17 ans au moment de la signature et n'était pas émancipé. De plus, l'achat d'un véhicule motorisé à crédit engage lourdement son patrimoine et ne saurait être qualifié d'acte anodin de la vie courante. Le vendeur ne peut valablement opposer la force obligatoire du contrat à un incapable protégé.
+                </p>
+                <p>
+                    <span class="step-badge hidden inline-block px-2 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mr-1">5. Solution</span><em>Par conséquent</em>, les parents d'Aminata ont toutes les chances d'obtenir gain de cause devant le tribunal en agissant en nullité relative du contrat de vente. Le contrat sera rétroactivement annulé, entraînant la restitution du scooter au vendeur et le remboursement des sommes éventuellement versées.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 4: Règles d'Or -->
+        <section id="regles" class="bg-white rounded-2xl p-6 sm:p-10 shadow-sm border border-slate-200">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Les règles d'or du cas pratique</h2>
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+                    <h3 class="font-bold text-emerald-900 flex items-center gap-2 mb-2">
+                        <span>✅</span> Les réflexes du juriste
+                    </h3>
+                    <ul class="text-sm text-emerald-800 space-y-2">
+                        <li>• Raisonner en droit positif (comme un juge), jamais en simple équité.</li>
+                        <li>• Traiter <strong>toutes les hypothèses plausibles</strong> si l'énoncé laisse une zone d'ombre.</li>
+                        <li>• Utiliser les connecteurs logiques : <em>« En droit... / En l'espèce... / Par conséquent... »</em>.</li>
+                        <li>• Citer avec précision les textes et la jurisprudence à l'appui de la majeure.</li>
+                    </ul>
+                </div>
+                <div class="p-4 rounded-xl bg-rose-50 border border-rose-200">
+                    <h3 class="font-bold text-rose-900 flex items-center gap-2 mb-2">
+                        <span>❌</span> Les pièges à éviter
+                    </h3>
+                    <ul class="text-sm text-rose-800 space-y-2">
+                        <li>• Inventer ou supposer des faits qui ne figurent pas dans l'énoncé.</li>
+                        <li>• Recopier l'intégralité de l'histoire au début de la copie.</li>
+                        <li>• Se contenter d'un « Oui » ou « Non » sans démontrer les conditions juridiques.</li>
+                        <li>• Réciter tout son cours sur un thème au lieu de cibler la règle utile.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800 mt-12">
+        <p>Babacar Seck — Méthodologie Juridique (Le Cas Pratique)</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('toggle-steps');
+        const badges = document.querySelectorAll('.step-badge');
+        let visible = false;
+
+        btn.addEventListener('click', () => {
+            visible = !visible;
+            badges.forEach(badge => {
+                badge.classList.toggle('hidden', !visible);
+            });
+            btn.textContent = visible ? 'Masquer les étapes du syllogisme' : 'Afficher les étapes du syllogisme';
+        });
+    </script>
+</body>
+</html>
