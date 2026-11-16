@@ -41,11 +41,12 @@
                     <span class="font-serif font-bold text-lg tracking-wide">Yoonu<span class="text-amber-400">Droit</span></span>
                 </a>
                 <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
-                    <a href="../Commentaire-Arret/index.html" class="hover:text-amber-400 transition">Accueil</a>
+                    <a href="../index.html" class="hover:text-amber-400 transition">Accueil</a>
                     <a href="#decoder" class="hover:text-amber-400 transition">Décoder l'Arrêt</a>
                     <a href="#introduction" class="hover:text-amber-400 transition">Introduction (6 Étapes)</a>
                     <a href="#corps" class="hover:text-amber-400 transition">Plan & Corps</a>
                     <a href="#exemple" class="hover:text-amber-400 transition">Arrêt Commenté</a>
+                    <a href="#senegal" class="hover:text-amber-400 transition">Arrêt sénégalais</a>
                 </div>
             </div>
         </div>
@@ -83,7 +84,7 @@
                 <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Décoder la structure et le langage d'un arrêt</h2>
             </div>
             <p class="text-slate-600 leading-relaxed mb-6">
-                Un arrêt de la Cour de cassation (ou d'une Cour suprême) obéit à une architecture rigide. Repérer chaque bloc permet de comprendre instantanément le litige :
+                Un arrêt de la Cour de cassation (en France) ou de la Cour suprême (au Sénégal, notamment par sa chambre civile et commerciale) obéit à une architecture rigide. Repérer chaque bloc permet de comprendre instantanément le litige :
             </p>
             
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -175,7 +176,7 @@
                         <h3 class="font-bold text-slate-900">Le problème de droit</h3>
                     </div>
                     <p class="text-xs text-slate-600 leading-relaxed">
-                        La question juridique abstraite posée aux juges. <strong>Interdiction absolue</strong> d'y faire figurer des noms propres, des dates ou des lieux.
+                        La question juridique abstraite posée aux juges. <strong>En principe</strong>, n'y faites figurer ni noms propres, ni dates, ni lieux.
                     </p>
                 </div>
 
@@ -222,18 +223,26 @@
         <section id="exemple" class="bg-slate-900 text-white rounded-2xl p-6 sm:p-10 shadow-xl">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-6">
                 <div>
-                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Illustration Tirée du Cours</span>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Illustration tirée du cours (droit français)</span>
                     <h2 class="text-2xl sm:text-3xl font-bold mt-1">Civ. 2<sup>e</sup>, 20 mars 1996 (Arrêt « Dameuse »)</h2>
+                    <p class="text-slate-400 text-xs mt-1">Cour de cassation, 2<sup>e</sup> chambre civile, 20 mars 1996, pourvoi n° 94-14.524, publié au Bulletin.</p>
                 </div>
                 <button id="toggle-steps" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-sm font-semibold rounded-lg transition self-start sm:self-center">
                     Afficher les étapes de la fiche
                 </button>
             </div>
 
-            <!-- Extrait de l'arrêt -->
+            <!-- Rappel droit français / droit sénégalais -->
             <div class="bg-slate-800/80 border border-slate-700 p-4 rounded-xl mb-6 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                <strong class="text-amber-400 uppercase tracking-wider text-xs block mb-1">Extrait de la décision :</strong>
-                « Vu l'article 1<sup>er</sup> de la loi du 5 juillet 1985 ; Attendu que cette loi s'applique aux victimes d'un accident de la circulation dans lequel est impliqué un véhicule terrestre à moteur (...) ; Attendu que Mme Gauer a fait une chute sur un trottoir alors qu'un ouvrier de la société ETM y effectuait des travaux à l'aide d'un engin de damage dépourvu de roues et qu'il manipulait par la manche ; (...) Qu'en statuant [que la dameuse est un véhicule terrestre à moteur], alors que cet outil ne constituait pas un véhicule au sens du texte susvisé, la cour d'appel en a violé les dispositions ; PAR CES MOTIFS : CASSE ET ANNULE... »
+                <strong class="text-amber-400 uppercase tracking-wider text-xs block mb-1">Attention : exemple de droit français</strong>
+                La loi du 5 juillet 1985 (« loi Badinter ») est une loi française. Au Sénégal, l'indemnisation des victimes d'accidents de la circulation relève du Code CIMA : voir l'arrêt sénégalais étudié plus bas. La méthode du commentaire reste la même.
+            </div>
+
+            <!-- Résumé de la décision -->
+            <div class="bg-slate-800/80 border border-slate-700 p-4 rounded-xl mb-6 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <strong class="text-amber-400 uppercase tracking-wider text-xs block mb-1">Résumé de la décision :</strong>
+                La Cour vise l'article 1<sup>er</sup> de la loi du 5 juillet 1985. Une passante avait chuté sur un trottoir où un ouvrier utilisait un engin de damage dépourvu de roues, manipulé par le manche. La cour d'appel avait considéré que cette dameuse, dotée d'un moteur produisant des vibrations et animant son déplacement, était un véhicule terrestre à moteur. La Cour de cassation casse : cet outil ne constitue pas un véhicule au sens du texte visé.
+                <span class="block mt-2 text-slate-400">Texte intégral : <a href="https://www.legifrance.gouv.fr/juri/id/JURITEXT000007035368/" target="_blank" rel="noopener" class="underline text-amber-400">Légifrance</a>.</span>
             </div>
 
             <!-- Introduction rédigée -->
@@ -241,33 +250,73 @@
                 <h3 class="text-lg font-bold text-amber-400">Exemple d'introduction complète :</h3>
                 <p>
                     <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mr-1">1. Attaque</span>Si la loi du 5 juillet 1985 a instauré un régime d'indemnisation particulièrement favorable aux victimes d'accidents de la circulation, son application demeure strictement subordonnée à l'implication d'un véhicule terrestre à moteur. 
-                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">2. Faits</span>En l'espèce, une passante a chuté sur un trottoir alors qu'un ouvrier d'une entreprise de bâtiment y effectuait des travaux à l'aide d'un engin de damage vibrant dépourvu de roues et manipulé par un manche. 
-                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">3. Procédure</span>Blessée, la victime a assigné la société ainsi que son assureur en réparation de son préjudice. Par un arrêt rendu le 8 avril 1994, la cour d'appel de Colmar a accueilli sa demande d'indemnisation sur le fondement de la loi du 5 juillet 1985, estimant que l'engin litigieux, pourvu d'un moteur animant son déplacement, constituait un véhicule terrestre à moteur. La société et son assureur ont alors formé un pourvoi en cassation. 
-                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">4. Moyens</span>Au soutien de leur pourvoi, les demandeurs reprochent aux juges du fond d'avoir violé l'article 1<sup>er</sup> de la loi précitée en qualifiant de véhicule un simple outil de chantier non pourvu de roues. 
-                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">5. Problème de droit</span><strong class="text-white font-semibold">La Cour de cassation devait ainsi déterminer si un engin de damage autopropulsé mais dépourvu de roues constitue un véhicule terrestre à moteur au sens de l'article 1<sup>er</sup> de la loi du 5 juillet 1985.</strong> 
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">2. Faits</span>En l'espèce, une passante a chuté sur un trottoir alors qu'un ouvrier d'une société y effectuait des travaux à l'aide d'un engin de damage dépourvu de roues et manipulé par le manche. 
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">3. Procédure</span>Blessée, la victime a demandé réparation de son préjudice à la société ainsi qu'à son assureur. La cour d'appel a accueilli sa demande sur le fondement de la loi du 5 juillet 1985, estimant que l'engin litigieux, pourvu d'un moteur animant son déplacement, constituait un véhicule terrestre à moteur. Un pourvoi en cassation a alors été formé. 
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">4. Moyens</span>Au soutien du pourvoi, il est reproché aux juges du fond d'avoir violé l'article 1<sup>er</sup> de la loi précitée en qualifiant de véhicule un simple outil de chantier non pourvu de roues. 
+                    <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">5. Problème de droit</span><strong class="text-white font-semibold">La Cour de cassation devait ainsi déterminer si un engin de damage motorisé mais dépourvu de roues constitue un véhicule terrestre à moteur au sens de l'article 1<sup>er</sup> de la loi du 5 juillet 1985.</strong> 
                     <span class="step-badge hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">6. Solution & Plan</span>Par un arrêt de cassation du 20 mars 1996, la deuxième chambre civile répond par la négative, jugeant que cet outil ne constituait pas un véhicule au sens du texte susvisé. Il convient dès lors d'étudier l'exclusion rigoureuse de la qualification de véhicule terrestre à moteur retenue par la Haute juridiction <strong class="text-amber-400">(I)</strong>, avant d'apprécier la portée restrictive de cette solution quant à l'indemnisation des victimes <strong class="text-amber-400">(II)</strong>.
                 </p>
+            </div>
+        </section>
+
+        <!-- Section 5: Arrêt sénégalais -->
+        <section id="senegal" class="bg-slate-900 text-white rounded-2xl p-6 sm:p-10 shadow-xl">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-6">
+                <div>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Et au Sénégal ? Un arrêt à décoder</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold mt-1">Cour suprême, 5 mai 2010, arrêt n° 32</h2>
+                    <p class="text-slate-400 text-xs mt-1">Chambre civile et commerciale. Amadou Mbodji et CNART c/ ayant droit de Mamadou Samba Sow. Bulletin des arrêts n° 2-3, p. 112.</p>
+                </div>
+                <button id="toggle-steps-sn" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-sm font-semibold rounded-lg transition self-start sm:self-center">
+                    Afficher les étapes de la fiche
+                </button>
+            </div>
+
+            <div class="bg-slate-800/80 border border-slate-700 p-4 rounded-xl mb-6 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <strong class="text-amber-400 uppercase tracking-wider text-xs block mb-1">Ce qu'il faut retenir :</strong>
+                La Cour suprême rappelle que le Code CIMA s'applique aux victimes d'un accident causé par un véhicule terrestre à moteur (article 225), et que la cour d'appel a eu raison de l'appliquer. Elle rejette le pourvoi, tout en relevant un motif erroné mais surabondant de la cour d'appel sur la notion d'implication.
+                Cette formulation de l'article 225 (accident « causé par » un véhicule terrestre à moteur) est celle que la doctrine récente cite encore : elle diffère de la loi française de 1985, qui vise un véhicule « impliqué ».
+                <span class="block mt-2 text-slate-400">Texte officiel : <a href="https://www.coursupreme.gouv.sn/sites/default/files/2021-03/BA2-3-2010-2011.pdf" target="_blank" rel="noopener" class="underline text-amber-400">Bulletin des arrêts de la Cour suprême (PDF)</a>.</span>
+            </div>
+
+            <div class="space-y-4 text-slate-200 leading-relaxed text-base font-light">
+                <h3 class="text-lg font-bold text-amber-400">Exemple d'introduction complète :</h3>
+                <p>
+                    <span class="step-badge-sn hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mr-1">1. Attaque</span>En droit sénégalais, l'indemnisation des victimes d'accidents de la circulation obéit à un régime spécial, issu du Code CIMA, qui trouve à s'appliquer dès lors qu'un véhicule terrestre à moteur est à l'origine de l'accident. 
+                    <span class="step-badge-sn hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">2. Faits</span>En l'espèce, un accident de la circulation survenu le 1<sup>er</sup> août 2004 a coûté la vie à une personne, deux véhicules, appartenant l'un à Mboki Boye et l'autre à Amadou Mbodj, étant impliqués dans l'accident. 
+                    <span class="step-badge-sn hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">3. Procédure</span>Le tribunal régional de Dakar a déclaré Mboki Boye entièrement responsable et mis hors de cause Amadou Mbodj ainsi que son assureur, la CNART. Par un arrêt partiellement infirmatif, la cour d'appel de Dakar a déclaré Mboki Boye et Amadou Mbodj solidairement responsables et a tenu leurs assureurs à garantie. Amadou Mbodji et la CNART ont alors formé un pourvoi en cassation. 
+                    <span class="step-badge-sn hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">4. Moyens</span>Au soutien de leur pourvoi, les demandeurs invoquent la violation de l'article 137 du Code des obligations civiles et commerciales et de l'article 226 du Code CIMA. 
+                    <span class="step-badge-sn hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">5. Problème de droit</span><strong class="text-white font-semibold">La Cour suprême devait ainsi déterminer si les règles du Code CIMA régissent l'indemnisation des victimes d'un accident de la circulation causé par un véhicule terrestre à moteur au sens de son article 225.</strong> 
+                    <span class="step-badge-sn hidden inline-block px-1.5 py-0.5 text-xs font-bold bg-amber-500 text-slate-900 rounded mx-1">6. Solution & Plan</span>Par un arrêt du 5 mai 2010, la chambre civile et commerciale répond par l'affirmative et rejette le pourvoi, estimant que la cour d'appel a fait une juste application des règles supranationales du droit des assurances, malgré un motif erroné mais surabondant. Il convient dès lors d'étudier l'application du Code CIMA aux accidents causés par un véhicule terrestre à moteur <strong class="text-amber-400">(I)</strong>, avant d'apprécier la portée de cette solution quant à la place d'un régime supranational d'indemnisation et au sort du motif surabondant <strong class="text-amber-400">(II)</strong>.
+                </p>
+                <p class="text-xs text-slate-400">Plan donné à titre d'exemple : un autre découpage reste possible.</p>
             </div>
         </section>
 
     </main>
 
     <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800 mt-12">
-        <p>Babacar — Méthodologie Juridique (Le Commentaire d'Arrêt)</p>
+        <p>Babacar Seck — Méthodologie Juridique (Le Commentaire d'Arrêt)</p>
+        <p class="mt-2 text-xs text-slate-500">Projet étudiant à visée pédagogique • Version 1 en cours d'amélioration</p>
     </footer>
 
     <script>
-        const btn = document.getElementById('toggle-steps');
-        const badges = document.querySelectorAll('.step-badge');
-        let visible = false;
+        function branche(buttonId, badgeClass) {
+            const btn = document.getElementById(buttonId);
+            const badges = document.querySelectorAll('.' + badgeClass);
+            let visible = false;
 
-        btn.addEventListener('click', () => {
-            visible = !visible;
-            badges.forEach(badge => {
-                badge.classList.toggle('hidden', !visible);
+            btn.addEventListener('click', () => {
+                visible = !visible;
+                badges.forEach(badge => {
+                    badge.classList.toggle('hidden', !visible);
+                });
+                btn.textContent = visible ? 'Masquer les étapes de la fiche' : 'Afficher les étapes de la fiche';
             });
-            btn.textContent = visible ? 'Masquer les étapes de la fiche' : 'Afficher les étapes de la fiche';
-        });
+        }
+
+        branche('toggle-steps', 'step-badge');
+        branche('toggle-steps-sn', 'step-badge-sn');
     </script>
 </body>
 </html>
